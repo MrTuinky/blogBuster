@@ -1,0 +1,46 @@
+<ng-include src="'./app/menu.html'"></ng-include>
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+         
+        
+
+          <div ng-repeat="p in pagina | limitTo : 6">
+
+              
+                <div  class="col-md-12">
+                  <h1>{{p.titulo}}</h1>
+                  <p id="contenido">{{p.cuerpo}}</p>
+                  
+                    <span id="fecha" class="badge badge-warning text-left">Fecha de publicación: {{p.fecha}}</span>
+        
+                    <span id="etiquetas" class="badge badge-info">{{p.etiquetas}}</span>
+        
+                  
+        
+                  <div class="container text-right">
+        
+                    <a href="http://localhost:8080/blogBuster/#!/post/view/{{p.id}}" class="btn btn-success">Verlo entero</a>
+        
+        
+                  </div>
+        
+                </div>
+                <hr>
+        
+                
+        
+             
+            </div>
+
+            <a href="http://localhost:8080/blogBuster/#!/post/plist/10/1" class="btn btn-danger float-right">Ver todos los Posts >></a>
+
+      </div>
+  </div>
+</div>
+
+
+
+<ng-include src="'./app/footer.html'"></ng-include>

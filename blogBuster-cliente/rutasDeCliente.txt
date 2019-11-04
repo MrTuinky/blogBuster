@@ -1,0 +1,18 @@
+/ob/view/id?
+/ob/plist/rpp?/page?
+/ob/new
+/ob/edit/id?
+/ob/remove/id?
+
+
+
+/home (landing page)
+menu -> en todas las vistas
+
+
+
+
+
+
+
+/ob/list (getall *)

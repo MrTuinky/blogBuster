@@ -1,0 +1,57 @@
+<ng-include src="'./app/menu.html'"></ng-include>
+
+<div class="form-center">
+    <div class="login-container">
+        <div class="login-top">
+            <img class="login-img" src="" alt="">
+            
+        </div>
+
+        <div class="container">
+            <div class="form-container flip">
+                <form name="userForm" class="login-form" ng-show="!fallo">
+                    <h3 class="title">Bienvenido/a</h3>
+                    <div class="form-group" id="username">
+                        <input class="form-control" tooltip-class="username-tooltip" placeholder="Usuario" id="email" name="username" ng-model="username" ng-class="{ 'is-invalid' : userForm.username.$invalid && !userForm.username.$pristine }" ng-required="true"></input>
+                        <span id="username-tool" class="tooltip username-tooltip">Usuario</span>
+                        <div class="invalid-feedback" ng-show="userForm.username.$error.required">
+                            El nombre de usuario no puede estar vacio.
+                        </div>
+                    </div>
+                    <div class="form-group" id="password">
+                        <input type="password" class="form-control" tooltip-class="password-tooltip" placeholder="Contraseña" name="password" ng-model="password" ng-class="{ 'is-invalid' : userForm.password.$invalid && !userForm.password.$pristine }" ng-required="true"></input>
+                        <span class="tooltip password-tooltip">Contraseña</span>
+                        <div class="invalid-feedback" ng-show="userForm.password.$error.required">
+                            La contraseña no puede estar vacía.
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="login-button" ng-click="login()" >Iniciar Sesión</button>
+
+                    </div>
+
+                    
+                </form>
+                <div class="loading">
+                    <div class="loading-spinner-large" style="display: none;"></div>
+                    <div class="loading-spinner-small" style="display: none;"></div>
+                </div>
+            
+
+        
+        <div class="login-form" ng-show="fallo">
+            <div class="card-header">
+                <h4 class="title">ERROR de acceso </h4>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-danger text-center" role="alert">
+                    {{falloMensaje}}
+                </div>
+                <button ng-click="volver()" class="login-button">Volver</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-include src="'./app/footer.html'"></ng-include>

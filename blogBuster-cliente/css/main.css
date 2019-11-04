@@ -1,0 +1,107 @@
+.container {
+    padding: 20px 15px 80px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 70px;
+    line-height: 0px;
+    /* Vertically center the text there */
+    background-color: #f5f5f5;
+}
+
+.footer>.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* CSS modificado por Carlos Hernández */
+
+.body {
+    background-color: black;
+}
+
+.navbar-fixed-top{
+    top: 2;
+    border-width: 0 0 1px;
+    
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    margin-right: 15px;
+    margin-left: 15px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    
+}
+
+.my-navbar {
+  border: 0;
+  border-radius: 0;
+  
+}
+
+.nav-bk7{
+background: #c2e59cb4;  
+background: -webkit-linear-gradient(to right, #02141b86, #152701a6);  
+background: linear-gradient(to right, #1592e6, #a1e1ec);
+
+
+}
+
+.nav-item{
+
+    color: #fff;
+
+}
+
+
+
+/*---------- Termina navbar ---------- */
+
+.header-social {
+
+    text-align: right;
+    margin-right: 15px;
+    color: #fff;
+    
+
+}
+
+#homediv2 {
+    margin-top: 75px;
+}
+
+#etiquetas {
+
+    margin-left: 10px;
+}
+
+#fecha {
+
+    margin-left: 10px;
+}
+
+#botonera {
+    width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+}
+
+/* Límite de caracteres a una línea, si desea ver más debe pulsar verlo entero */
+
+#contenido {
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Fin CSS modificado por Carlos Hernández */
+

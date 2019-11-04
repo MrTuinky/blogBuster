@@ -1,0 +1,62 @@
+
+
+
+<!-- Empieza el header -->
+
+<header class="masthead mb-5">
+
+
+  <div style="color: #000000" class="header-social ml-3">Carlos Hernández</div>
+
+
+  <!-- Menú de navegación -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-light my-navbar navbar-fixed-top nav-bk7 mb-5">
+    <a class="navbar-brand" style="color: #fff" href="#">BlogBuster</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" ng-class="{'active':(controller=='homeController')}" href="#!/home/10/1">Página Principal
+            <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ng-class="{'active':(controller=='postPlistController')}" href="#!/post/plist/10/1">Todos
+            los Posts</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" ng-class="{'active':(controller=='postNewController')}" href="#!/post/new">Nuevo
+            Post</a>
+        </li>
+
+        <li class="nav-item" ng-show="authStatus!=200">
+          <a class="nav-link" ng-class="{'active': sitio=='login'}" href="#!/login">Iniciar Sesión <i
+              class="fas fa-sign-in-alt"></i></a>
+        </li>
+
+        <li class="nav-item" ng-show="authStatus==200">
+          <span class="nav-link">Usuario: {{authUsername}}</span>
+        </li>
+
+        <li class="nav-item" ng-show="authStatus==200">
+          <a class="nav-link" ng-class="{'active': sitio=='logout'}" href="#!/logout">Cerrar Sesión <i
+              class="fas fa-sign-out-alt"></i></a>
+        </li>
+
+
+      </ul>
+
+      
+
+    </div>
+  </nav>
+
+  <!-- Fin menú de navegación -->
+
+  
+</header>
