@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BlogBusterApp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prueba inicial de AngularJS</title>
+  <link rel="icon" href="BBicono.ico" type="image/x-icon" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
+  <!-- calendar -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+  <!-- fin de calendar -->
+  <!-- HTML Editor-->
+  <link rel="stylesheet" href="vendor/uikit/css/uikit.min.css" />
+  <script src="vendor/uikit/js/uikit.min.js"></script>
+  <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css">
+  <script src="vendor/codemirror/lib/codemirror.js"></script>
+  <script src="vendor/codemirror/mode/markdown/markdown.js"></script>
+  <script src="vendor/codemirror/addon/mode/overlay.js"></script>
+  <script src="vendor/codemirror/mode/xml/xml.js"></script>
+  <script src="vendor/codemirror/mode/gfm/gfm.js"></script>
+  <script src="vendor/marked/lib/marked.js"></script>
+  <link rel="stylesheet" href="vendor/uikit/css/components/htmleditor.css">
+  <script src="vendor/uikit/js/components/htmleditor.js"></script>
+  <!-- Fin HTML Editor-->
+  <script src="vendor/angular-css.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="vendor/forge-sha256.min.js"></script>
+  <script src="config/module.js"></script>
+  <script src="config/config.js"></script>
+  <script src="config/filter.js"></script>
+  <script src="config/promesasService.js"></script>
+  <script src="config/routes.js"></script>
+  <script src="app/homeController.js"></script>
+  <script src="app/post/plist/plist.js"></script>
+  <script src="app/post/remove/remove.js"></script>
+  <script src="app/post/view/view.js"></script>
+  <script src="app/post/edit/edit.js"></script>
+  <script src="app/post/new/new.js"></script>
+  <script src="app/usuario/login/login.js"></script>
+  <script src="app/usuario/logout/logout.js"></script>
+  <script src="app/post/fill/fill.js"></script>
+  <script src="app/post/fill/fill.css"></script>
+  <script src="app/post/logout/logout.css"></script>
+  <script src="app/post/login/login.css"></script>
+</head>
+
+<body>
+  <div ng-view></div>
+</body>
+
+</html>
